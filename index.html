@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+
+  <body class="w-screen bg-gray-100">
+    <section
+      class="sticky top-0 flex h-screen w-full translate-y-[calc(-1%_*_(max(min(var(--scroll),_100),_25)_-_25)_*_100_/_75)] items-start">
+      <div
+        class="flex h-full w-full flex-col justify-center bg-white bg-opacity-[calc(100%_-_1%_*_min(min(var(--scroll),_100),_30)_*_100_/_30)] sm:w-1/2">
+        <h1 class="text-6xl font-bold">Build Better Backends</h1>
+        <p>
+          The only platform that gives AI the ability to autonomously build web
+          services.
+        </p>
+      </div>
+      <div
+        class="hidden h-full bg-gray-200 bg-opacity-[calc(100%_-_1%_*_min(min(var(--scroll),_100),_30)_*_100_/_30)] sm:block sm:w-1/2"></div>
+    </section>
+    <section class="flex h-screen items-center justify-center bg-none">
+      <h1 class="text-6xl font-bold">Sup Bro</h1>
+    </section>
+    <section class="relative h-screen w-full">
+      <div
+        id="cc"
+        class="fixed bottom-0 z-10 h-72 w-[calc(1%_*_min(0,_var(--scroll)_-_200)_+_50%_+_1%_*_min(min(var(--scroll),_100),_30)*_50_/_30)] translate-y-[calc(1%_*_0)] bg-red-400"></div>
+    </section>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
